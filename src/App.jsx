@@ -163,7 +163,7 @@ Be direct, specific, and commercial. No fluff. Max 200 words.`;
 
     try {
       // Route through Netlify function to keep API key server-side
-      const res = await fetch("/api/claude", {
+      const res = await fetch("/.netlify/functions/claude", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
