@@ -204,20 +204,29 @@ Be direct, specific, and commercial. No fluff. Max 200 words.`;
         justifyContent: "space-between",
       }}>
         <div>
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <div style={{
-              width: 36, height: 36, borderRadius: 8,
-              background: "linear-gradient(135deg, #c9a84c, #e8c96a)",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              fontSize: 13, fontWeight: 800, color: "#080c14",
-              fontFamily: "'Syne', sans-serif", letterSpacing: "-0.5px",
-            }}>FW</div>
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            {/* Flambard Williams SVG Logo */}
+            <svg width="160" height="44" viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* FW Italic Monogram */}
+              <text x="4" y="36" fontFamily="Georgia, serif" fontSize="38" fontWeight="bold"
+                fontStyle="italic" fill="#ffffff" letterSpacing="-2">FW</text>
+              {/* Vertical divider */}
+              <line x1="80" y1="6" x2="80" y2="38" stroke="rgba(255,255,255,0.25)" strokeWidth="1"/>
+              {/* FLAMBARD */}
+              <text x="86" y="22" fontFamily="Arial, sans-serif" fontSize="11" fontWeight="bold"
+                fill="#ffffff" letterSpacing="2">FLAMBARD</text>
+              {/* WILLIAMS */}
+              <text x="86" y="36" fontFamily="Arial, sans-serif" fontSize="11" fontWeight="bold"
+                fill="#ffffff" letterSpacing="2">WILLIAMS</text>
+            </svg>
+            {/* Divider */}
+            <div style={{ width: 1, height: 36, background: "rgba(255,255,255,0.1)" }} />
             <div>
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 18, fontWeight: 800, color: "#fff", letterSpacing: "-0.5px" }}>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 16, fontWeight: 800, color: "#fff", letterSpacing: "-0.5px" }}>
                 Broker Performance Agent
               </div>
               <div style={{ fontSize: 11, color: "#5a6480", letterSpacing: "0.5px", textTransform: "uppercase" }}>
-                Flambard Williams · Live Intelligence
+                Live Intelligence Dashboard
               </div>
             </div>
           </div>
